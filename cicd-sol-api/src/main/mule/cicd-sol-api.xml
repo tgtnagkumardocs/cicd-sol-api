@@ -10,5 +10,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="cicd-sol-apiFlow" doc:id="fe3dd19a-f3a6-41e4-9a11-2de0fc5a51bb" >
 		<http:listener doc:name="Listener" doc:id="0068d0eb-1704-4f9a-a523-b2cc07924318" config-ref="HTTP_Listener_config" path="/cicdapi"/>
 		<logger level="INFO" doc:name="Logger" doc:id="8db1262d-6280-4311-8d23-acadb5d2112f" message="1st logger"/>
+		<set-payload value='#["1st Set Payload"]' doc:name="Set Payload" doc:id="2f2bc3c3-ed2f-465e-b79d-79cff7af8881" />
 	</flow>
 </mule>
